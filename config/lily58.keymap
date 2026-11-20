@@ -10,6 +10,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#define FAST_UP    MOVE_Y(-1000)
+#define FAST_DOWN  MOVE_Y(1000)
+#define FAST_LEFT  MOVE_X(-1000)
+#define FAST_RIGHT MOVE_X(1000)
+
 / {
     macros {
         sleep: sleep {
@@ -106,3 +111,8 @@
     acceleration-exponent = <1>;
     delay-ms = <0>;
 };
+
+&arrow_mouse FAST_UP UP
+&arrow_mouse FAST_DOWN DOWN
+&arrow_mouse FAST_LEFT LEFT
+&arrow_mouse FAST_RIGHT RIGHT
