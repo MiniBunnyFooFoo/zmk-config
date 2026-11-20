@@ -10,10 +10,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define FAST_UP    MOVE_Y(-1000)
-#define FAST_DOWN  MOVE_Y(1000)
-#define FAST_LEFT  MOVE_X(-1000)
-#define FAST_RIGHT MOVE_X(1000)
+#define MOVE_UP    MOVE_Y(-1000)
+#define MOVE_DOWN  MOVE_Y(1000)
+#define MOVE_LEFT  MOVE_X(-1000)
+#define MOVE_RIGHT MOVE_X(1000)
 
 / {
     macros {
@@ -111,8 +111,3 @@
     acceleration-exponent = <1>;
     delay-ms = <0>;
 };
-
-&mouse_hold FAST_UP UP
-&mouse_hold FAST_DOWN DOWN
-&mouse_hold FAST_LEFT LEFT
-&mouse_hold FAST_RIGHT RIGHT
