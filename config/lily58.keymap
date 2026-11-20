@@ -112,7 +112,7 @@
     delay-ms = <0>;
 };
 
-&arrow_mouse FAST_UP UP
-&arrow_mouse FAST_DOWN DOWN
-&arrow_mouse FAST_LEFT LEFT
-&arrow_mouse FAST_RIGHT RIGHT
+&mouse_hold FAST_UP UP
+&mouse_hold FAST_DOWN DOWN
+&mouse_hold FAST_LEFT LEFT
+&mouse_hold FAST_RIGHT RIGHT
